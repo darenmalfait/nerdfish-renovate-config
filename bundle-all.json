@@ -1,0 +1,10 @@
+{
+  "extends": ["local>darenmalfait/nerdfish-renovate-config:shared"],
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchPackagePatterns": ["*"]
+    }
+  ]
+}

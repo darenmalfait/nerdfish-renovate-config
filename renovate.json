@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "local>darenmalfait/nerdfish-renovate-config:bundle-all",
+    "schedule:weekly"
+  ],
+  "assignees": ["darenmalfait"],
+  "packageRules": []
+}
