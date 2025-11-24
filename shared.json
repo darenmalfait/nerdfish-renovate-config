@@ -13,6 +13,7 @@
     ":semanticPrefixFixDepsChoreOthers",
     ":separateMultipleMajorReleases"
   ],
+  "minimumReleaseAge": "7 days",
   "ignorePresets": [":prHourlyLimit4"],
   "vulnerabilityAlerts": {
     "description": "Be sure that the Dependency graph and Dependabot alerts are enabled for the repo. Details: https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts",
@@ -21,7 +22,7 @@
   },
   "osvVulnerabilityAlerts": true,
   "prCreation": "not-pending",
-  "prConcurrentLimit": 3,
+  "prConcurrentLimit": 4,
   "rangeStrategy": "bump",
   "postUpdateOptions": ["npmDedupe"],
   "lockFileMaintenance": {
