@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   renovate:
-    specifier: ^42.66.11
+    specifier: ^42.71.0
     version: 42.71.0(typanion@3.12.1)
 
 devDependencies:
   '@commitlint/cli':
-    specifier: 20.2.0
-    version: 20.2.0(@types/node@20.5.1)(typescript@5.7.3)
+    specifier: 20.3.0
+    version: 20.3.0(@types/node@20.5.1)(typescript@5.7.3)
   '@commitlint/config-conventional':
-    specifier: 20.2.0
-    version: 20.2.0
+    specifier: 20.3.0
+    version: 20.3.0
   husky:
     specifier: 9.1.7
     version: 9.1.7
@@ -1042,8 +1042,8 @@ packages:
       fs-extra: 11.3.0
     dev: false
 
-  /@commitlint/cli@20.2.0(@types/node@20.5.1)(typescript@5.7.3):
-    resolution: {integrity: sha512-l37HkrPZ2DZy26rKiTUvdq/LZtlMcxz+PeLv9dzK9NzoFGuJdOQyYU7IEkEQj0pO++uYue89wzOpZ0hcTtoqUA==}
+  /@commitlint/cli@20.3.0(@types/node@20.5.1)(typescript@5.7.3):
+    resolution: {integrity: sha512-HXO8YVfqdBK+MnlX2zqNrv6waGYPs6Ysjm5W2Y0GMagWXwiIKx7C8dcIX9ca+QdHq4WA0lcMnZLQ0pzQh1piZg==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
@@ -1059,8 +1059,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@20.2.0:
-    resolution: {integrity: sha512-MsRac+yNIbTB4Q/psstKK4/ciVzACHicSwz+04Sxve+4DW+PiJeTjU0JnS4m/oOnulrXYN+yBPlKaBSGemRfgQ==}
+  /@commitlint/config-conventional@20.3.0:
+    resolution: {integrity: sha512-g1OXVl6E2v0xF1Ru2RpxQ+Vfy7XUcUsCmLKzGUrhFLS4hSNykje0QSy6djBtzOiOBQCepBrmIlqx/gRlzrSh5A==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 20.2.0
@@ -3291,7 +3291,7 @@ packages:
     engines: {node: '>=0.10'}
     requiresBuild: true
     dependencies:
-      nan: 2.23.1
+      nan: 2.24.0
     dev: false
     optional: true
 
@@ -5077,7 +5077,7 @@ packages:
     dependencies:
       minipass: 7.1.2
       minipass-sized: 1.0.3
-      minizlib: 3.0.1
+      minizlib: 3.1.0
     optionalDependencies:
       encoding: 0.1.13
     dev: false
@@ -5137,16 +5137,6 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /minizlib@3.0.1:
-    resolution: {integrity: sha512-umcy022ILvb5/3Djuu8LWeqUa8D68JaBzlttKeMWen48SjabqS3iY5w/vzeMzMUNhLDifyhbOwKDSznB1vvrwg==}
-    engines: {node: '>= 18'}
-    requiresBuild: true
-    dependencies:
-      minipass: 7.1.2
-      rimraf: 5.0.10
-    dev: false
-    optional: true
-
   /minizlib@3.1.0:
     resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
     engines: {node: '>= 18'}
@@ -5203,12 +5193,6 @@ packages:
       mkdirp: 0.5.6
       ncp: 2.0.0
       rimraf: 2.4.5
-    dev: false
-    optional: true
-
-  /nan@2.23.1:
-    resolution: {integrity: sha512-r7bBUGKzlqk8oPBDYxt6Z0aEdF1G1rwlMcLk8LCOMbOzf0mG+JUfUzG4fIMWwHWP0iyaLWEQZJmtB7nOHEm/qw==}
-    requiresBuild: true
     dev: false
     optional: true
 
