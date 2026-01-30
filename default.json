@@ -1,21 +1,12 @@
 {
-  "extends": ["local>darenmalfait/nerdfish-renovate-config:shared"],
+  "extends": [
+    "local>darenmalfait/nerdfish-renovate-config:shared",
+    "group:allNonMajor"
+  ],
   "packageRules": [
     {
       "groupName": "all nerdfish packages",
       "matchPackagePatterns": ["@nerdfish/*"]
-    },
-    {
-      "groupName": "patch dependencies",
-      "groupSlug": "all-patch",
-      "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["patch"]
-    },
-    {
-      "groupName": "minor dependencies",
-      "groupSlug": "all-minor",
-      "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor"]
     }
   ]
 }
