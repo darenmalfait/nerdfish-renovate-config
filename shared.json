@@ -13,6 +13,7 @@
     ":semanticPrefixFixDepsChoreOthers",
     ":separateMultipleMajorReleases"
   ],
+  "gitAuthor": "Nerdfish Renovate Bot <56068461+darenmalfait@users.noreply.github.com>",
   "minimumReleaseAge": "7 days",
   "ignorePresets": [":prHourlyLimit4"],
   "vulnerabilityAlerts": {
