@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
     "group:react",
@@ -14,6 +15,8 @@
     ":separateMultipleMajorReleases"
   ],
   "gitAuthor": "Nerdfish Renovate Bot <56068461+darenmalfait@users.noreply.github.com>",
+  "timezone": "Europe/Paris",
+  "labels": ["dependencies"],
   "minimumReleaseAge": "7 days",
   "ignorePresets": [":prHourlyLimit4"],
   "vulnerabilityAlerts": {
@@ -23,14 +26,28 @@
   },
   "osvVulnerabilityAlerts": true,
   "prCreation": "not-pending",
-  "prConcurrentLimit": 4,
+  "prConcurrentLimit": 2,
+  "branchConcurrentLimit": 2,
   "rangeStrategy": "bump",
-  "postUpdateOptions": ["npmDedupe"],
+  "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "enabled": false
   },
-  "rebaseWhen": "conflicted",
-  "labels": ["dependencies"],
-  "timezone": "Europe/Paris",
-  "packageRules": []
+  "postUpdateOptions": ["pnpmDedupe"],
+  "toolSettings": {
+    "nodeMaxMemory": 1536
+  },
+  "env": {
+    "PNPM_MAX_WORKERS": "1",
+    "PNPM_CONFIG_TRUST_LOCKFILE": "true"
+  },
+  "packageRules": [
+    {
+      "description": "pnpm major bumps are too heavy for Mend's 3GB runner — do them manually",
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["pnpm"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ]
 }
