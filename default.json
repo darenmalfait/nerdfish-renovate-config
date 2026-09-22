@@ -1,12 +1,23 @@
 {
-  "extends": [
-    "local>darenmalfait/nerdfish-renovate-config:shared",
-    "group:allNonMajor"
-  ],
+  "extends": ["local>darenmalfait/nerdfish-renovate-config:shared"],
   "packageRules": [
     {
       "groupName": "all nerdfish packages",
-      "matchPackagePatterns": ["@nerdfish/*"]
+      "matchPackageNames": ["/@nerdfish/*/"]
+    },
+    {
+      "description": "Split non-majors — allNonMajor OOMs Mend's 3GB runner on nerdfish.be",
+      "groupName": "patch dependencies",
+      "groupSlug": "all-patch",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["patch"]
+    },
+    {
+      "description": "Split non-majors — allNonMajor OOMs Mend's 3GB runner on nerdfish.be",
+      "groupName": "minor dependencies",
+      "groupSlug": "all-minor",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor"]
     }
   ]
 }
